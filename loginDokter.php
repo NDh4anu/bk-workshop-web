@@ -3,6 +3,9 @@ if (!isset($_SESSION)) {
     session_start();
 }
 
+
+include_once("koneksi.php");
+
 // Memeriksa apakah request yang diterima adalah POST
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Mengambil data nama dan password dari formulir POST

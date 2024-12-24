@@ -3,7 +3,17 @@ if (!isset($_SESSION)) {
     session_start();
 }
 
-    include_once("koneksi.php");
+
+// Periksa apakah pengguna sudah login
+if (isset($_SESSION['id']) && isset($_SESSION['nama'])) {
+    // Jika pengguna sudah login, redirect ke halaman beranda dokter
+    header("Location: berandaDokter.php");
+    exit;
+}
+
+include_once("koneksi.php");
+
+
 ?>
 
 <!doctype html>
