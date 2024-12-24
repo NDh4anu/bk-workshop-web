@@ -8,7 +8,7 @@
 ## **Login Sebagai Admin**
 ```
     username : admin
-    password : admin1234
+    password : admin123
 ```
 ---
 
