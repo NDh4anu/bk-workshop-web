@@ -42,7 +42,6 @@ if (isset($_GET['aksi'])) {
                 <th scope="col">Biaya Periksa</th>
                 <th scope="col">Nama Obat</th>
                 <th scope="col">Aksi</th>
-                <th scope="col">Cetak</th>
             </tr>
         </thead>
         <!--tbody berisi isi tabel sesuai dengan judul atau head-->
@@ -77,7 +76,6 @@ if (isset($_GET['aksi'])) {
         <a class="btn btn-success" role="button" href="berandaDokter.php?page=periksa&id=<?php echo $data['id'] ?>">Ubah</a>
     </td>
     <td>
-    <a class="btn btn-info" role="button" href="cetak.php?id=<?php echo $data['id'] ?>" target="_blank">Cetak</a>
 </td>
 </tr>
 
